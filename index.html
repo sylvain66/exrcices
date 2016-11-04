@@ -41,7 +41,7 @@
    Suspendisse nec tincidunt lacus, vitae vehicula magna. Nunc eu tempus enim. Nullam et rutrum quam, ut consectetur nunc.
    Duis tincidunt imperdiet velit, vel mattis tortor aliquam nec. Nulla ac vehicula elit. Mauris iaculis velit eu odio commodo viverra.
    Proin sit amet facilisis sapien. Aliquam volutpat placerat eros, eget pellentesque elit pretium ut.
-   Maecenas lacinia ornare eros vitae lacinia. 
+   Maecenas lacinia ornare eros vitae lacinia.
    Etiam congue dapibus enim, sed fringilla sapien fringilla vitae.
  </div>
   <ul id="ul">
@@ -51,11 +51,44 @@
       <li>PHP</li>
       <li>...</li>
   </ul>
+
   <button id="button">faire disparaitre</button>
   <button id="boutton">afficher texte</button>
   <button id="button1">changer la couleur</button>
   <button id="button2">changer font-family</button>
   <button id="button3">Ont fait le menage</button>
+  <ul>
+   <li class="vue" style="height:50px";>Html vue</li>
+   <li class="vue" style="height:50px";>CSS vue</li>
+   <li class="a_cacher" style="height:50px;">Javascript a cacher</li>
+   <li class="vue"style="height:50px";>PHP vue</li>
+   <li class="a_cacher" style="height:50px;">... a cacher</li>
+ </ul>
+ <ol>
+   <li class="a_cacher" style="height:50px;">JQuery a cacher</li>
+   <li class="vue"style="height:50px";>Angular JS vue</li>
+   <li class="a_cacher" style:"height50px";>Node JS a cacher</li>
+   <li class="vue" style="height:50px";>BootStrap vue</li>
+   <li class="vue" style="height:50px";>Symfony vue</li>
+   <li class="a_cacher" style="height:50px;">Laravel a cacher</li>
+ </ol>
+ <button id="button4">cacher les classes a_cacher</button>
+ <ul>
+   <li class="avoir" style="height:50px;">Html vue</li>
+   <li class="avoir" style="height:50px;">CSS vue</li>
+   <li class="a_supprimer" style="height:50px;">Javascript a supprimer</li>
+   <li class="avoir" style="height:50px;">PHP vue</li>
+   <li class="a_supprimer" style="height:50px;">... a supprimer</li>
+ </ul>
+ <ol>
+   <li class="a_supprimer" style="height:50px;">JQuery a supprimer</li>
+   <li class="avoir" style="height:50px;">Angular JS</li>
+   <li class="a_supprimer" style="height:50px;">Node JS a supprimer</li>
+   <li class="avoir" style="height:50px;">BootStrap</li>
+   <li class="avoir" style="height:50px;">Symfony</li>
+   <li class="a_supprimer" style="height:50px;">Laravel a supprimer</li>
+ </ol>
+ <button id="button5">Supprimer tous les éléments de la classe "a_supprimer".</button>
   <script>
         $('#button').click(function(){
         $('p').hide();
@@ -83,6 +116,18 @@
         $('#button3').click(function(){
         $('#texte_2').hide();
  });
+  </script>
+  <script>
+      $('#button4').click(function(){
+        $('.a_cacher').hide();
+        $('.vue').css("color","red");
+      });
+  </script>
+  <script>
+      $("#button5").click(function(){
+        $(".a_supprimer").hide();
+        $(".avoir").css('color','green');
+      });
   </script>
 
 
